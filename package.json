@@ -1,9 +1,12 @@
 {
   "name": "animalfacts",
+  "homepage":"https://piqueen314.github.io/Animal-Facts-React/",
   "version": "1.0.0",
   "description": "Click on an animal to get facts",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "webpack serve",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +25,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.72.0",
